@@ -10,6 +10,7 @@ export default function Header() {
     { name: 'Início', href: '#inicio' },
     { name: 'Ferramentas', href: '#ferramentas' },
     { name: 'Suite Pro', href: '#creator-pro' },
+    { name: 'Studio IA', href: '#studio-ia' },
     { name: 'Como funciona', href: '#como-funciona' },
     { name: 'FAQ', href: '#faq' },
   ];
@@ -31,7 +32,7 @@ export default function Header() {
                 className="text-[13px] font-medium text-brand-secondary hover:text-brand-primary transition-colors flex items-center gap-1.5"
               >
                 {link.name}
-                {link.name === 'Suite Pro' && (
+                {(link.name === 'Suite Pro' || link.name === 'Studio IA') && (
                   <span className="px-1 py-0.5 bg-brand-accent text-[8px] rounded text-white font-bold">NEW</span>
                 )}
               </a>
@@ -71,7 +72,7 @@ export default function Header() {
                   className="px-3 py-4 text-base font-medium text-brand-secondary hover:text-white hover:bg-white/5 rounded-lg transition-all flex items-center justify-between"
                 >
                   {link.name}
-                  {link.name === 'Suite Pro' && (
+                  {(link.name === 'Suite Pro' || link.name === 'Studio IA') && (
                     <span className="px-2 py-1 bg-brand-accent text-[10px] rounded text-white font-bold">NEW</span>
                   )}
                 </a>

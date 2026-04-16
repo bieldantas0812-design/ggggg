@@ -10,6 +10,7 @@ import Benefits from './components/Benefits';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import SuiteCreatorPro from './components/suite/SuiteCreatorPro';
+import StudioIA from './components/studio/StudioIA';
 import { cn } from './lib/utils';
 
 type ToolId = 'remover' | 'qrcode' | 'prompt';
@@ -90,6 +91,7 @@ export default function App() {
         </section>
 
         <SuiteCreatorPro />
+        <StudioIA />
 
         <Benefits />
         <FAQ />
